@@ -1,7 +1,14 @@
-numero1 = input('number 1: ');
-numero2 = input('number 2: ');
-print(f'Número 1: {numero1}' );
-print(f'Número 2: {numero2}' );
-
-suma = numero1 + numero2;
-print(f'Sumatoria: {suma}' );
+respuesta = 99999;
+def mostrarMenu():
+ print('| ------------------------------------------------ |');
+ print('| ----------------------MENU---------------------- |');
+ print('| 1 - SUMAR                                        |');
+ print('| 2 - RESTAR                                       |');
+ print('| 3 - MULTIPLICAR                                  |' );
+ print('| 4 - DIVIDIR                                      |' );
+ print('| 0 - SALIR                                        |' );
+ print('| ------------------------------------------------ |');
+ 
+while(respuesta != 0):
+    mostrarMenu();
+    respuesta = int(input('Qué quieres hacer: '));
